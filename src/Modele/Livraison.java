@@ -33,7 +33,7 @@ public class Livraison {
 	}
 
 	public Livraison() {
-		
+		 
 	}
 	
 	public int getId_livraison() {
