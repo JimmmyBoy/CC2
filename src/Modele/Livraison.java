@@ -23,14 +23,14 @@ public class Livraison {
 	
 	@OneToOne
 	@JoinColumn(name = "id_contrat", referencedColumnName = "id_contrat")
-	private int id_contrat;
+	private int Id_contrat;
 
-	public Livraison(int id_livraison, Date date_livraison, Time heure_livraison, int contrat) {
+	public Livraison(int id_livraison, Date date_livraison, Time heure_livraison, int id_contrat) {
 		super();
 		Id_livraison = id_livraison;
 		Date_livraison = date_livraison;
 		Heure_livraison = heure_livraison;
-		id_contrat = contrat;
+		Id_contrat = id_contrat;
 	}
 
 	public Livraison() {
@@ -61,11 +61,11 @@ public class Livraison {
 		Heure_livraison = heure_livraison;
 	}
 
-	public Contrat getContrat() {
-		return contrat;
+	public int getContrat() {
+		return Id_contrat;
 	}
 
-	public void setContrat(Contrat contrat) {
-		this.contrat = contrat;
+	public void setContrat(int id_contrat) {
+		Id_contrat = id_contrat;
 	}
 }
