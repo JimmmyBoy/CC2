@@ -4,14 +4,15 @@ import java.sql.Date;
 
 import javax.persistence.*;
 
+//test
 @Entity
-
 public class Contrat {
 	@Id
 	private int Id_contrat;
 	private Date Date_conclusion;
 	private String Adresse;
 	private String Description;
+	private String test;
 	
 	@Column(name = "prix_total")
 	private float Prix_total;
